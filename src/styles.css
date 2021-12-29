@@ -1,0 +1,30 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: rgb(16,0,47);
+    background: linear-gradient(117deg, rgba(16,0,47,1) 0%, rgba(43,11,102,1) 35%, rgba(0,139,143,1) 100%) no-repeat fixed;
+}
+
+h1 {
+    @apply text-4xl font-semibold py-2;
+}
+
+h2 {
+    @apply text-2xl font-semibold py-1;
+}
+
+a {
+    @apply underline text-blue-500;
+}
+
+.active {
+    @apply brightness-75;
+}
