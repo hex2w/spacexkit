@@ -1,0 +1,23 @@
+[data-vjson] .string { @apply text-slate-800 }
+
+[data-vjson] .key * { @apply text-black }
+
+[data-vjson] .number { @apply text-teal-800 }
+
+[data-vjson] .bool-true { @apply text-emerald-600 }
+
+[data-vjson] .bool-false { @apply text-rose-700 }
+
+[data-vjson] .null { @apply text-slate-500 }
+
+[data-vjson] .array-item { @apply p-1 }
+
+[data-vjson] .key { @apply text-sm font-medium text-gray-500 }
+
+[data-vjson] .val { @apply mt-1 text-sm text-gray-900 }
+
+[data-vjson] .key-val-wrapper { @apply bg-white px-4 py-5 }
+
+[data-vjson] .key-val-wrapper:not(:first-child) { @apply border-t }
+
+[data-vjson] a { @apply text-blue-800 underline }
