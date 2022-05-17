@@ -1,6 +1,6 @@
 export async function apiGet (path, options = {}, query = {}){
     if (Object.keys(options).length === 0 && Object.keys(query).length === 0) {
-        return fetch(`${api}${path}`)
+        return fetch(`${apiUrl}${path}`)
             .then(res => {
                 if (res.ok) {
                     return res.json()
@@ -11,7 +11,7 @@ export async function apiGet (path, options = {}, query = {}){
             })
             .catch( error => { return { error: error } } )
     } else return fetch(
-        `${api}${path}/query`,
+        `${apiUrl}${path}/query`,
         {
             method: "POST",
             headers: { "Content-Type": "application/json" },

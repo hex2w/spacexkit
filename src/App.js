@@ -1,4 +1,4 @@
-import { h, computed, resolveComponent } from "vue"
+import { h, resolveComponent } from "vue"
 import { useRoute } from "vue-router"
 import Nav from "./components/Nav.vue"
 
@@ -25,11 +25,6 @@ const footer = h("footer", {
 export default {
     setup() {
         const route = useRoute()
-        const routeName = computed(_ => {
-            if (route.name.startsWith("get-one")) return ""
-
-            return route.name[0].toUpperCase() + route.name.substring(1)
-        })
 
         return _ => [
             h(Nav),
@@ -38,7 +33,7 @@ export default {
             h("div", {
                 class: "text-white"
             }, [
-                h("h1", { class: "p-5" }, `${routeName.value}`),
+                h("h1", { class: "p-5 capitalize" }, !`${route.name}`.startsWith("get-one") ? `${route.name}` : ""),
 
                 h(resolveComponent("router-view"), {
                     key: route.path + route.query.page,
