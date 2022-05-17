@@ -29,11 +29,11 @@ onMounted(_ => {
 
 </div>
 
-<p class="text-center pb-4 text-xl text-cyan-200 font-semibold">v{{ version }}</p>
+<p class="px-2 text-center pb-4 text-xl text-cyan-200 font-semibold">v{{ version }}</p>
 
-<p class="text-center text-2xl max-w-5xl mx-auto">An website where you can browse SpaceX's launch, rocket, core, capsule, starlink, launchpad, roadster and landing pad data.</p>
+<p class="px-2 text-center text-xl md:text-2xl max-w-5xl mx-auto">An website where you can browse SpaceX's launch, rocket, core, capsule, starlink, launchpad, roadster and landing pad data.</p>
 
-<div class="text-center pt-6 text-xl">
+<div class="text-center pt-6 text-xl px-2">
     <p>This project is open source!</p>
     <a href="https://github.com/hex3928/spacexkit" target="_blank" class="bg-white rounded-md py-1 px-2 inline-flex gap-2 text-black mt-2 underline">
         Browse the source code  <img class="w-6" :src="githubLogo" />
@@ -75,6 +75,6 @@ onMounted(_ => {
 
 </div>
 
-<p class="pt-6 text-sm italic max-w-3xl mx-auto">We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with Space Exploration Technologies Corp (SpaceX), or any of its subsidiaries or its affiliates. The names SpaceX as well as related names, marks, emblems and images are registered trademarks of their respective owners.</p>
+<p class="pt-6 text-sm italic max-w-3xl mx-auto px-2">We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with Space Exploration Technologies Corp (SpaceX), or any of its subsidiaries or its affiliates. The names SpaceX as well as related names, marks, emblems and images are registered trademarks of their respective owners.</p>
 
 </template>

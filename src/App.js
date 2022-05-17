@@ -33,7 +33,7 @@ export default {
             h("div", {
                 class: "text-white"
             }, [
-                h("h1", { class: "p-5 capitalize" }, !`${route.name}`.startsWith("get-one") ? `${route.name}` : ""),
+                h("h1", { class: "p-5 capitalize text-xl md:text-3xl" }, route.name && !`${route.name}`.startsWith("get-one") ? `${route.name}` : ""),
 
                 h(resolveComponent("router-view"), {
                     key: route.path + route.query.page,
